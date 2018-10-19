@@ -2,6 +2,7 @@ initScrollReveal('.myCard')
 initScrollReveal('.skills')
 initScrollReveal('.portfolio')
 initScrollReveal('.message')
+initScrollReveal('.experience')
 
 function initScrollReveal(e){
     ScrollReveal().reveal(e, {

@@ -263,8 +263,6 @@ hr {
 }
 /* 技能 */
 .skills #radar {
-  margin: 0 auto;
-  width: 100%;
   min-height: 500px;
 }
 /* 作品集 */
@@ -295,11 +293,55 @@ hr {
 .portfolio .portfolio-img:hover .portfolio-mask {
   opacity: 1;
 }
-/* 留言板 */
-.message {
-  margin: 50px auto;
-  width: 90%;
+/* 个人经历 */
+.experience .experience-inner {
+  display: flex;
+  justify-content: center;
 }
+.experience-left-ul {
+  position: relative;
+  width: 150px;
+  height: 100%;
+  padding-top: 10px;
+}
+.experience-left-ul li {
+  height: 110px;
+  line-height: 110px;
+  color: #7EC0EE;
+}
+.experience-left-ul li span {
+  border: 2px solid #7EC0EE;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #fff;
+  display: block;
+  position: absolute;
+  right: -12px;
+}
+.experience-left-ul li .circle1 {
+  top: 58px;
+}
+.experience-left-ul li .circle2 {
+  top: 168px;
+}
+.experience-left-ul li .circle3 {
+  bottom: 48px;
+}
+.experience-right-ul {
+  border-left: 8px solid #d7d8d8;
+}
+.experience-right-ul li {
+  margin: 28px 0 35px 50px;
+}
+.experience-right-ul li span {
+  color: #7EC0EE;
+}
+.experience-right-ul li h3,
+.experience-right-ul li p {
+  margin: 5px 0;
+}
+/* 留言板 */
 .message ol {
   max-width: 800px;
   margin: 0 auto;
@@ -438,6 +480,22 @@ hr {
   }
   .portfolio .portfolio-img .portfolio-mask h3 {
     margin-bottom: 10px;
+  }
+  /* 个人经历 */
+  .experience-left-ul {
+    width: 165px;
+  }
+  .experience-left-ul li {
+    height: 150px;
+  }
+  .experience-left-ul li .circle2 {
+    top: 208px;
+  }
+  .experience-left-ul li .circle3 {
+    bottom: 85px;
+  }
+  .experience-right-ul li {
+    margin: 35px 0 40px 18px;
   }
   /* 留言板 */
   .message form .formName,

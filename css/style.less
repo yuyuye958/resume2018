@@ -237,20 +237,20 @@ hr {
 			fill: white;
 			vertical-align: top;
 		}
-		.popover{
+		.popover {
 			width: 150px;
 			height: 150px;
 			position: absolute;
-    		transform: translate(-60%,-105%);
+			transform: translate(-60%, -105%);
 			border: 2px solid #337ab7;
 			border-radius: 5px;
 			display: none;
 		}
-		.popover-qq{
+		.popover-qq {
 			background: url(../img/qq.jpg) no-repeat transparent;
 			background-size: cover;
 		}
-		.popover-weixin{
+		.popover-weixin {
 			background: url(../img/weixin.png) no-repeat transparent;
 			background-size: cover;
 		}
@@ -277,8 +277,6 @@ hr {
 /* 技能 */
 .skills {
 	#radar {
-		margin: 0 auto;
-		width: 100%;
 		min-height: 500px;
 	}
 }
@@ -316,10 +314,59 @@ hr {
 	}
 }
 
+/* 个人经历 */
+.experience {
+	.experience-inner {
+		display: flex;
+		justify-content: center;
+	}
+}
+.experience-left-ul {
+	position: relative;
+	width: 150px;
+	height: 100%;
+	padding-top: 10px;
+	li {
+		height: 110px;
+		line-height: 110px;
+		color: @blue;
+		span {
+			border: 2px solid @blue;
+			height: 16px;
+			width: 16px;
+			border-radius: 50%;
+			background: #fff;
+			display: block;
+			position: absolute;
+			right: -12px;
+		}
+		.circle1 {
+			top: 58px;
+		}
+		.circle2 {
+			top: 168px;
+		}
+		.circle3 {
+			bottom: 48px;
+		}
+	}
+}
+.experience-right-ul {
+	border-left: 8px solid #d7d8d8;
+	li {
+		margin: 28px 0 35px 50px;
+		span {
+			color: @blue;
+		}
+		h3,
+		p {
+			margin: 5px 0;
+		}
+	}
+}
+
 /* 留言板 */
 .message {
-	margin: 50px auto;
-	width: 90%;
 	ol {
 		max-width: 800px;
 		margin: 0 auto;
@@ -338,7 +385,8 @@ hr {
 	form {
 		text-align: center;
 		margin-bottom: 20px;
-		.formName,.formContent{
+		.formName,
+		.formContent {
 			display: inline;
 		}
 		label,
@@ -442,8 +490,8 @@ hr {
 			}
 		}
 	}
-	.media{
-		a{
+	.media {
+		a {
 			margin: 10px 8px;
 		}
 	}
@@ -471,18 +519,39 @@ hr {
 		}
 	}
 
+	/* 个人经历 */
+	.experience-left-ul {
+		width: 165px;
+		li {
+			height: 150px;
+			.circle2 {
+				top: 208px;
+			}
+			.circle3 {
+				bottom: 85px;
+			}
+		}
+	}
+	.experience-right-ul {
+		li {
+			margin: 35px 0 40px 18px;
+		}
+	}
+
 	/* 留言板 */
-	.message{
-		form{
-			.formName,.formContent{
+	.message {
+		form {
+			.formName,
+			.formContent {
 				display: block;
 				text-align: left;
 				margin-bottom: 5px;
 			}
-			label{
+			label {
 				display: none;
 			}
-			input[name=name],input[name=content]{
+			input[name=name],
+			input[name=content] {
 				width: 100%;
 			}
 			input[type=submit] {

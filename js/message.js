@@ -26,7 +26,7 @@
                     })
                 },
                 function (error) {
-                    alert('提交失败')
+                    alert('获取数据失败')
                 }
             )
         },
