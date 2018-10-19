@@ -1,0 +1,460 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #efefef;
+}
+a {
+  color: inherit;
+  font-size: 1em;
+}
+img {
+  width: 100%;
+}
+hr {
+  height: 0;
+  border: none;
+  border-top: 1px solid #dedede;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.section {
+  max-width: 940px;
+  width: 90%;
+  margin: 100px auto;
+}
+.sectiontitle {
+  font-size: 2.2em;
+  font-weight: 600;
+  color: #3d4451;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* 导航 */
+.topNavBar {
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  transition: all 0.5s;
+  color: #b7b7b7;
+}
+.topNavBar .topNavBar-inner {
+  padding: 0 30px;
+}
+@media screen and (min-width: 768px) {
+  .topNavBar .topNavBar-inner nav {
+    padding-top: 5px;
+  }
+  .topNavBar .topNavBar-inner nav ul > li {
+    float: left;
+    margin: 0 17px 0 17px;
+    position: relative;
+  }
+  .topNavBar .topNavBar-inner nav ul > li a {
+    font-size: 0.8em;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    padding: 5px 0 5px 0;
+    display: block;
+    position: relative;
+  }
+  .topNavBar .topNavBar-inner nav ul > li .submenu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    color: #3d4451;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .topNavBar .topNavBar-inner nav ul > li .submenu li {
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 8px 10px;
+  }
+  .topNavBar .topNavBar-inner nav ul li.active > .submenu {
+    display: block;
+    animation: submenuSlide .2s;
+  }
+  .topNavBar .topNavBar-inner nav ul li.active a::after,
+  .topNavBar .topNavBar-inner nav ul li.highlight a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #7EC0EE;
+    animation: NavSlide .2s;
+  }
+}
+@keyframes submenuSlide {
+  0% {
+    margin-right: 100%;
+  }
+  100% {
+    margin-right: 0%;
+  }
+}
+@keyframes NavSlide {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.topNavBar .topNavBar-inner .logo {
+  font: 24px 'Arial Black';
+  padding-top: 3px;
+  padding-bottom: 4px;
+}
+.topNavBar .topNavBar-inner .logo .rs {
+  margin-right: 4px;
+  color: #7EC0EE;
+}
+.topNavBar .topNavBar-inner .logo .card {
+  color: #9a9da2;
+}
+.sticky {
+  opacity: 0.9;
+  background-color: white;
+  padding: 10px 0;
+  z-index: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  color: #3d4451;
+}
+/* 背景 */
+.banner {
+  height: 515px;
+  background: url(../img/rs-cover.jpg) no-repeat center center;
+  background-size: cover;
+}
+.banner .mask {
+  height: 515px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* 名片 */
+.myCard {
+  margin-top: -350px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.myCard .myCard-inner {
+  background-color: white;
+  padding: 40px 50px;
+}
+.myCard .myCard-inner .photo {
+  float: left;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.myCard .myCard-inner .intro {
+  float: right;
+  max-width: 470px;
+  margin: 0 auto;
+}
+.myCard .myCard-inner .intro .sayHello {
+  color: white;
+  background-color: #7EC0EE;
+  padding: 4px 16px;
+  display: inline-block;
+  line-height: 22px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.myCard .myCard-inner .intro .sayHello .triangle {
+  display: inline-block;
+  border: 10px solid transparent;
+  border-left-color: #7EC0EE;
+  border-top-width: 0;
+  width: 0;
+  position: absolute;
+  top: 100%;
+  left: 10px;
+}
+.myCard .myCard-inner .intro h1 {
+  margin-bottom: 5px;
+}
+.myCard .myCard-inner .intro hr {
+  margin: 20px 0;
+}
+.myCard .myCard-inner .intro .myCardText p {
+  padding: 8px 0;
+}
+.myCard .myCard-inner .intro .myCardText p span {
+  display: inline-block;
+}
+.myCard .myCard-inner .intro .myCardText p span:first-child {
+  width: 30%;
+  font-weight: bold;
+}
+.myCard .myCard-inner .intro .myCardText p span:nth-child(2) {
+  width: 70%;
+  color: #9da0a7;
+}
+.media {
+  background-color: #7EC0EE;
+  text-align: center;
+}
+.media > a {
+  display: inline-block;
+  width: 40px;
+  line-height: 30px;
+  padding: 5px 0;
+  border-radius: 50%;
+  margin: 16px;
+  position: relative;
+}
+.media > a:hover {
+  background: #b0e2ff;
+}
+.media > a svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  vertical-align: top;
+}
+.media > a .popover {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  transform: translate(-60%, -105%);
+  border: 2px solid #337ab7;
+  border-radius: 5px;
+  display: none;
+}
+.media > a .popover-qq {
+  background: url(../img/qq.jpg) no-repeat transparent;
+  background-size: cover;
+}
+.media > a .popover-weixin {
+  background: url(../img/weixin.png) no-repeat transparent;
+  background-size: cover;
+}
+/* 下载pdf简历 */
+.downloadresume-wrapper {
+  float: right;
+}
+.downloadresume {
+  padding: 14px 16px;
+  border: 1px solid #7EC0EE;
+  border-radius: 3px;
+  font-weight: bold;
+  display: inline-block;
+  transition: box-shadow 0.2s;
+}
+.downloadresume:hover {
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+}
+/* 技能 */
+.skills #radar {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 500px;
+}
+/* 作品集 */
+.portfolio .portfolio-img {
+  position: relative;
+  margin: 1%;
+  width: 48%;
+  display: inline-block;
+}
+.portfolio .portfolio-img img {
+  vertical-align: top;
+}
+.portfolio .portfolio-img .portfolio-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(101, 101, 101, 0.6);
+  padding: 20px;
+  color: #ffffff;
+  opacity: 0;
+  transition: all .3s;
+}
+.portfolio .portfolio-img .portfolio-mask h3 {
+  margin-bottom: 20px;
+}
+.portfolio .portfolio-img:hover .portfolio-mask {
+  opacity: 1;
+}
+/* 留言板 */
+.message {
+  margin: 50px auto;
+  width: 90%;
+}
+.message ol {
+  max-width: 800px;
+  margin: 0 auto;
+  border-top: 1px solid #ececec;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 1px 6px 4px rgba(102, 102, 102, 0.1);
+}
+.message ol li {
+  padding: 13px;
+  border-bottom: 1px solid #ececec;
+}
+.message ol li p {
+  margin-top: 6px;
+}
+.message form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.message form .formName,
+.message form .formContent {
+  display: inline;
+}
+.message form label,
+.message form input {
+  vertical-align: middle;
+  padding: 4px;
+}
+.message form input {
+  border-radius: 2px;
+  border: 1px solid #7EC0EE;
+}
+.message form input[name=name] {
+  width: 18%;
+}
+.message form input[name=content] {
+  width: 40%;
+}
+.message form input[type=submit] {
+  margin-left: 10px;
+  padding: 3px 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #7EC0EE;
+}
+.message form .notice {
+  color: red;
+  padding: 3px;
+  display: none;
+  text-align: right;
+  width: 90%;
+}
+.message form .noticeVisible {
+  display: block;
+}
+/* 页尾 */
+.pageEnd {
+  text-align: center;
+  margin: 110px auto 15px auto;
+  color: #333;
+  font-size: 0.8em;
+}
+/***************************/
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  /* 导航 */
+  .topNavBar nav {
+    transition: all .3s;
+  }
+  .topNavBar nav ul {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    display: none;
+  }
+  .topNavBar nav ul li {
+    line-height: 40px;
+    height: 40px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid #9fb6cd;
+  }
+  .topNavBar nav ul li a {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  .topNavBar .navMobile {
+    width: 36px;
+    height: 36px;
+    float: right;
+    background: url(/img/menu.png) no-repeat;
+    background-size: cover;
+  }
+  .sticky {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    box-shadow: none;
+  }
+  /* 名片 */
+  .myCard {
+    margin-top: -610px;
+  }
+  .myCard .myCard-inner {
+    padding: 20px;
+  }
+  .myCard .myCard-inner .photo {
+    float: none;
+  }
+  .myCard .myCard-inner .intro {
+    float: none;
+    margin-top: 20px;
+  }
+  .myCard .myCard-inner .intro h1 {
+    margin: 3px 0 15px;
+  }
+  .media a {
+    margin: 10px 8px;
+  }
+  /* 背景 */
+  .banner {
+    height: 700px;
+  }
+  .banner .mask {
+    height: 700px;
+  }
+  /* 作品集 */
+  .portfolio .portfolio-img {
+    margin: 10px auto;
+    width: 100%;
+  }
+  .portfolio .portfolio-img .portfolio-mask {
+    padding: 10px;
+    opacity: 0.9;
+  }
+  .portfolio .portfolio-img .portfolio-mask h3 {
+    margin-bottom: 10px;
+  }
+  /* 留言板 */
+  .message form .formName,
+  .message form .formContent {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .message form label {
+    display: none;
+  }
+  .message form input[name=name],
+  .message form input[name=content] {
+    width: 100%;
+  }
+  .message form input[type=submit] {
+    width: 100%;
+    margin: 0;
+  }
+}

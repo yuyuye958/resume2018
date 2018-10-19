@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=1,minimum-scale=1,maximum-scale=1,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="//at.alicdn.com/t/font_838460_hvjrlity9zt.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+    <title>叶晓宇的简历</title>
+</head>
+
+<body>
+
+    <!-- 导航 -->
+    <div id="topNavBar" class="topNavBar">
+        <div class="topNavBar-inner clearfix">
+            <a class="logo float-left" href="#">
+                <span class="rs">Ye</span><span class="card">XiaoYu</span>
+            </a>
+            <nav class="float-right">
+                <ul id="menu" class="clearfix">
+                    <li>
+                        <a href="#about">关于</a>
+                    </li>
+                    <li>
+                        <a href="#skills">技能</a>
+                    </li>
+                    <li>
+                        <a href="#works">作品</a>
+                    </li>
+                    <li>
+                        <a href="#message">留言板</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/yuyuye958">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://yuyuye958.github.io/">博客</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 移动端 -->
+            <div class="navMobile"></div>
+        </div>
+
+    </div>
+
+    <!-- 背景 -->
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+
+    <!-- 名片 -->
+    <main>
+        <div data-x id="about" class="myCard section">
+            <div class="myCard-inner clearfix">
+                <div class="photo">
+                    <img src="./img/avatar.png" alt="photo">
+                </div>
+                <div class="intro">
+                    <span class="sayHello">你好，我正在求职 前端开发工程师<span class="triangle"></span></span>
+
+                    <div class="downloadresume-wrapper">
+                        <a href="./resume.pdf" class="downloadresume" target="_blank" download>下载 PDF 简历</a>
+                    </div>
+
+                    <h1>叶晓宇</h1>
+                    <p class="selfIntro">
+                        我2017年6月毕业于上海金融学院 计算机科学与技术专业，现希望从事前端开发工作，已自学三个月。
+                    </p>
+                    <hr>
+                    <div class="myCardText">
+                        <p>
+                            <span>年龄</span><span>24</span>
+                        </p>
+                        <p>
+                            <span>城市</span><span>上海</span>
+                        </p>
+                        <p>
+                            <span>学历</span><span>本科</span>
+                        </p>
+                        <p>
+                            <span>邮箱</span><span>yuyuye958@qq.com</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="media">
+                <a href="https://github.com/yuyuye958">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+                <a href="https://yuyuye958.github.io/">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-blog"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;">
+                    <svg class="icon" aria-hidden="true" id="weixin">
+                        <use xlink:href="#icon-weixin"></use>
+                    </svg>
+                    <span class="popover popover-weixin"></span>
+                </a>
+                <a href="javascript:;">
+                    <svg class="icon" aria-hidden="true" id="qq">
+                        <use xlink:href="#icon-QQ"></use>
+                    </svg>
+                    <span class="popover popover-qq"></span>
+                </a>
+                <a href="Mailto:yuyuye958@qq.com">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-mail"></use>
+                    </svg>
+                </a>
+            </footer>
+        </div>
+
+    </main>
+
+    <!-- 技能 -->
+    <section data-x id="skills" class="skills section">
+        <h2 class="sectiontitle">技能</h2>
+        <div id="radar"></div>
+    </section>
+
+    <!-- 作品集 -->
+    <section data-x id="works" class="portfolio section">
+        <h2 class="sectiontitle">作品集</h2>
+        <div>
+            <div class="portfolio-img">
+                <img src="./img/keyboardNav.jpg">
+                <a href="https://yuyuye958.github.io/myNav/" class="portfolio-mask" target="_blank">
+                    <h3>键盘导航</h3>
+                    <ul>
+                        <li>关键词：原生 JavaScript、DOM操作</li>
+                        <li>描述：该项目使用原生JS实现，主要调用 Canvas API，实现了划线、调色、橡皮擦、保存等功能。完全由我独立开发。用 XXX 实现了 XXX 功能，用 XXX 实现了 XXX
+                            功能。</li>
+                    </ul>
+                </a>
+            </div><div class="portfolio-img">
+                <img class="swiper-slide" src="./img/canvas.jpg">
+                <a href="https://yuyuye958.github.io/myCanvas/" class="portfolio-mask" target="_blank">
+                    <h3>在线画板</h3>
+                    <ul>
+                        <li>关键词：原生 JavaScript、Canvas、响应式</li>
+                        <li>描述：该项目使用 原生JS 实现，主要调用 Canvas API，支持移动端使用，实现了画画、调色、橡皮擦、保存等功能。</li>
+                    </ul>
+                </a>
+            </div><div class="portfolio-img">
+                <img class="swiper-slide" src="./img/KoroSensei.jpg">
+                <a href="https://yuyuye958.github.io/KoroSensei/" class="portfolio-mask" target="_blank">
+                    <h3>用代码画Koro老师</h3>
+                    <ul>
+                        <li>关键词：原生 JavaScript、响应式、prism.js</li>
+                        <li>描述：利用原生 JavaScript 动态向style标签添加样式以及pre标签添加文本。主要使用 CSS3 实现，利用 prism.js 实现代码高亮。</li>
+                    </ul>
+                </a>
+            </div><div class="portfolio-img">
+                <img class="swiper-slide" src="./img/music.jpg">
+                <a href="https://yuyuye958.github.io/myNav/" class="portfolio-mask" target="_blank">
+                    <h3>网易云音乐</h3>
+                    <ul>
+                        <li>关键词：移动端、jQuery</li>
+                        <li>描述：移动端歌曲播放、搜索、功能、PC 端歌曲上传、修改等功能。使用 jQuery、MVC、以及 LeanCloud、七牛等作为数据库实现</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 留言板 -->
+    <section data-x id="message" class="message section">
+        <h2 class="sectiontitle">留言板</h2>
+        <form action="">
+            <div class="formName">
+                <label for="name">名字</label>
+                <input type="text" name="name" placeholder="输入你的名字">
+            </div>
+            <div class="formContent">
+                <label for="content">留言</label>
+                <input type="text" name="content" placeholder="告诉我你的留言">
+            </div>
+
+            <input type="submit" value="提交">
+            <p class="notice">姓名和内容不能为空!</p>
+        </form>
+        <ol id="messageList">
+
+        </ol>
+    </section>
+
+    <!-- 页尾 -->
+    <section class="pageEnd">
+        Copyright © 2018 All Rights Reserved Design by Allen
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.1.0.rc2/echarts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.0-beta.31/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.10.0/dist/av-min.js"></script>
+    <script src="./js/base/view.js"></script>
+    <script src="./js/base/model.js"></script>
+    <script src="./js/base/controller.js"></script>
+
+    <script src="./js/auto-scroll.js"></script>
+    <script src="./js/sticky-topBar.js"></script>
+    <script src="./js/nav-scroll.js"></script>
+    <script src="./js/message.js"></script>
+    <script src="./js/icon-toggle.js"></script>
+    <script src="./js/vendor/init-Echarts.js"></script>
+    <script src="./js/vendor/init-scrollreveal.js"></script>
+
+
+</body>
+
+</html>
