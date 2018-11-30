@@ -1,6 +1,7 @@
 initScrollReveal('.myCard')
 initScrollReveal('.skills')
 initScrollReveal('.portfolio')
+initScrollReveal('.portfolio-list')
 initScrollReveal('.message')
 initScrollReveal('.experience')
 

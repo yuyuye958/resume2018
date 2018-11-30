@@ -45,10 +45,10 @@
                         <a href="#message">留言板</a>
                     </li>
                     <li>
-                        <a href="https://github.com/yuyuye958">GitHub</a>
+                        <a href="https://github.com/yuyuye958" target="_blank">GitHub</a>
                     </li>
                     <li>
-                        <a href="https://yuyuye958.github.io/">博客</a>
+                        <a href="https://yuyuye958.github.io/" target="_blank">博客</a>
                     </li>
                 </ul>
             </nav>
@@ -65,7 +65,7 @@
 
     <!-- 名片 -->
     <main>
-        <div data-x id="about" class="myCard section">
+        <div data-x id="about" class="myCard section section-shadow">
             <div class="myCard-inner clearfix">
                 <div class="photo">
                     <img src="./img/avatar.png" alt="photo">
@@ -73,13 +73,13 @@
                 <div class="intro">
                     <span class="sayHello">你好，我正在求职 前端开发工程师<span class="triangle"></span></span>
 
-                    <div class="downloadresume-wrapper">
-                        <a href="./resume.pdf" class="downloadresume" target="_blank" download>下载 PDF 简历</a>
+                    <div class="float-right">
+                        <a href="./resume.pdf" class="button-default" target="_blank" download>下载 PDF 简历</a>
                     </div>
 
                     <h1>叶晓宇</h1>
                     <p class="selfIntro">
-                        我2017年6月毕业于上海金融学院 计算机科学与技术专业，现希望从事前端开发工作，已自学三个月。
+                        一个踏入社会满一年多的男生，虽然科班毕业但一开始却走了别的路。现在选择了前端并正在不断前行。
                     </p>
                     <hr>
                     <div class="myCardText">
@@ -90,7 +90,7 @@
                             <span>城市</span><span>上海</span>
                         </p>
                         <p>
-                            <span>学历</span><span>本科</span>
+                            <span>学历</span><span>本科 / 计算机科学与技术</span>
                         </p>
                         <p>
                             <span>邮箱</span><span>yuyuye958@qq.com</span>
@@ -100,24 +100,24 @@
             </div>
 
             <footer class="media">
-                <a href="https://github.com/yuyuye958">
+                <a href="https://github.com/yuyuye958" target="_blank">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-github"></use>
                     </svg>
                 </a>
-                <a href="https://yuyuye958.github.io/">
+                <a href="https://yuyuye958.github.io/" target="_blank">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-blog"></use>
                     </svg>
                 </a>
-                <a href="javascript:;">
-                    <svg class="icon" aria-hidden="true" id="weixin">
+                <a href="javascript:;" id="weixin">
+                    <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-weixin"></use>
                     </svg>
                     <span class="popover popover-weixin"></span>
                 </a>
-                <a href="javascript:;">
-                    <svg class="icon" aria-hidden="true" id="qq">
+                <a href="javascript:;" id="qq">
+                    <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-QQ"></use>
                     </svg>
                     <span class="popover popover-qq"></span>
@@ -135,50 +135,154 @@
     <!-- 技能 -->
     <section data-x id="skills" class="skills section">
         <h2 class="sectiontitle">技能</h2>
-        <div id="radar"></div>
+        <div class="skills-content section-shadow">
+            <div class="skills-text">
+                <h3>HTML 5 &amp; CSS 3</h3>
+                <p>熟悉HTML5，掌握常用CSS3，熟练实现响应式布局，具备良好的设计稿还原能力，熟悉Scss和Less</p>
+                <hr>
+                <h3>JavaScript</h3>
+                <p>熟悉原生JavaScript，熟练使用ES6语法；熟悉前后端交互技术JSONP、AJAX</p>
+                <hr>
+                <h3>jQuery</h3>
+                <p>熟悉 jQuery 的常用 API，熟练操作 DOM</p>
+                <hr>
+                <h3>移动端页面</h3>
+                <p>会使用 REM、vw/vh 等技术制作适配移动端的页面</p>
+                <hr>
+                <h3>Vue</h3>
+                <p>熟悉Vue技术栈及相关流行库的使用，理解其重要概念如生命周期、响应式原理；熟悉组件化、模块化开发，熟练使用Vue-Router、Vuex、Vue-CLI</p>
+                <hr>
+                <h3>其它</h3>
+                <p>理解MVC、MVVM思想；熟悉NPM / Yarn / Git基本操作；了解Webpack、Parcel等前端构建工具；了解Node.js，能够使用Node+Koa2搭建基本后台</p>
+            </div>
+            <div id="radar"></div>
+        </div>
     </section>
 
     <!-- 作品集 -->
     <section data-x id="works" class="portfolio section">
         <h2 class="sectiontitle">作品集</h2>
-        <div>
-            <div class="portfolio-img">
-                <img src="./img/keyboardNav.jpg">
-                <a href="https://yuyuye958.github.io/myNav/" class="portfolio-mask" target="_blank">
+        <div class="portfolio-content">
+            <div class="portfolio-list section-shadow">
+                <div class="portfolio-list-img">
+                    <a href="https://yuyuye958.github.io/GuLu-UI/" target="_blank">
+                        <img class="swiper-slide" src="./img/GuLu-UI.jpg">
+                    </a>
+                </div>
+                <div class="portfolio-list-content">
+                    <h3>GuLu-UI 一套基于 Vue2.5 的 UI 框架</h3>
+                    <ul>
+                        <li>
+                            <strong>关键词：</strong>
+                            <span>Vue、SCSS、Parcel、组件化、单元测试</span>
+                        </li>
+                        <li>
+                            <strong>描述：</strong>
+                            <span>GuLu-UI 是一套美观易用的UI框架，提供了Tabs、Popover、Collapse等常用UI组件。编写该项目涵盖了Vue的大部分功能，包括生命周期、组件通信等，并进行了单元测试。本框架已发布至NPM供学习交流。</span>
+                        </li>
+                    </ul>
+                    <div>
+                        <a class="button-default" href="https://yuyuye958.github.io/GuLu-UI/" target="_blank">点我预览</a>
+                        <a class="button-default" href="https://github.com/yuyuye958/GuLu-UI" target="_blank">源码链接</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-list section-shadow">
+                <div class="portfolio-list-img">
+                    <a href="https://yuyuye958.github.io/NeteaseMusic-Demo/src/index.html" target="_blank">
+                        <img class="swiper-slide" src="./img/music.jpg">
+                    </a>
+                </div>
+                <div class="portfolio-list-content">
+                    <h3>NeteaseMusic 仿网易云音乐</h3>
+                    <ul>
+                        <li>
+                            <strong>关键词：</strong>
+                            <span>MVC、jQuery、移动端</span>
+                        </li>
+                        <li>
+                            <strong>描述：</strong>
+                            <span>包含移动端和PC的后台管理页。<br/>
+                                移动端支持歌曲播放、搜索、歌词滚动等，后台支持歌曲上传、修改等功能。使用 jQuery、MVC模式以及 LeanCloud 和七牛作为数据库开发。</span>
+                        </li>
+                    </ul>
+                    <div>
+                        <a class="button-default" href="https://yuyuye958.github.io/NeteaseMusic-Demo/src/index.html" target="_blank">点我预览</a>
+                        <a class="button-default" href="https://github.com/yuyuye958/NeteaseMusic-Demo" target="_blank">源码链接</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-list section-shadow">
+                <div class="portfolio-list-img">
+                    <a href="https://yuyuye958.github.io/KoroSensei/" target="_blank">
+                        <img class="swiper-slide" src="./img/KoroSensei.jpg">
+                    </a>
+                </div>
+                <div class="portfolio-list-content">
+                    <h3>CSS3 画一个Koro老师</h3>
+                    <ul>
+                        <li>
+                            <strong>关键词：</strong>
+                            <span>CSS3、原生JS、响应式、prism.js</span>
+                        </li>
+                        <li>
+                            <strong>描述：</strong>
+                            <span>利用原生 JavaScript 动态向style标签添加样式以及pre标签添加文本。使用 CSS3 画出该动漫人物，利用 prism.js 实现代码高亮。</span>
+                        </li>
+                    </ul>
+                    <div>
+                        <a class="button-default" href="https://yuyuye958.github.io/KoroSensei" target="_blank">点我预览</a>
+                        <a class="button-default" href="https://github.com/yuyuye958/KoroSensei" target="_blank">源码链接</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-list section-shadow">
+                <div class="portfolio-list-img">
+                    <a href="https://yuyuye958.github.io/myNav/" target="_blank">
+                        <img class="swiper-slide" src="./img/keyboardNav.jpg">
+                    </a>
+                </div>
+                <div class="portfolio-list-content">
                     <h3>键盘导航</h3>
                     <ul>
-                        <li>关键词：原生 JavaScript、DOM操作</li>
-                        <li>描述：该项目使用原生JS实现，主要调用 Canvas API，实现了划线、调色、橡皮擦、保存等功能。完全由我独立开发。用 XXX 实现了 XXX 功能，用 XXX 实现了 XXX
-                            功能。</li>
+                        <li>
+                            <strong>关键词：</strong>
+                            <span>原生 JavaScript、DOM操作</span>
+                        </li>
+                        <li>
+                            <strong>描述：</strong>
+                            <span>这是一个用原生JS编写的键盘导航页面，JS遍历数组生成键盘，使用LocalStorage储存用户自定义的导航网址。按下键盘便能跳转到对应的导航网址。</span>
+                        </li>
                     </ul>
-                </a>
-            </div><div class="portfolio-img">
-                <img class="swiper-slide" src="./img/canvas.jpg">
-                <a href="https://yuyuye958.github.io/myCanvas/" class="portfolio-mask" target="_blank">
+                    <div>
+                        <a class="button-default" href="https://yuyuye958.github.io/myNav/" target="_blank">点我预览</a>
+                        <a class="button-default" href="https://github.com/yuyuye958/myNav" target="_blank">源码链接</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-list section-shadow">
+                <div class="portfolio-list-img">
+                    <a href="https://yuyuye958.github.io/myCanvas/" target="_blank">
+                        <img class="swiper-slide" src="./img/canvas.jpg">
+                    </a>
+                </div>
+                <div class="portfolio-list-content">
                     <h3>在线画板</h3>
                     <ul>
-                        <li>关键词：原生 JavaScript、Canvas、响应式</li>
-                        <li>描述：该项目使用 原生JS 实现，主要调用 Canvas API，支持移动端使用，实现了画画、调色、橡皮擦、保存等功能。</li>
+                        <li>
+                            <strong>关键词：</strong>
+                            <span>原生 JavaScript、Canvas、响应式</span>
+                        </li>
+                        <li>
+                            <strong>描述：</strong>
+                            <span>该项目使用 原生JS 实现，调用了 Canvas API，支持移动端使用，实现了画画、调色、橡皮擦、保存等功能。</span>
+                        </li>
                     </ul>
-                </a>
-            </div><div class="portfolio-img">
-                <img class="swiper-slide" src="./img/KoroSensei.jpg">
-                <a href="https://yuyuye958.github.io/KoroSensei/" class="portfolio-mask" target="_blank">
-                    <h3>用代码画Koro老师</h3>
-                    <ul>
-                        <li>关键词：原生 JavaScript、响应式、prism.js</li>
-                        <li>描述：利用原生 JavaScript 动态向style标签添加样式以及pre标签添加文本。主要使用 CSS3 实现，利用 prism.js 实现代码高亮。</li>
-                    </ul>
-                </a>
-            </div><div class="portfolio-img">
-                <img class="swiper-slide" src="./img/music.jpg">
-                <a href="https://yuyuye958.github.io/myNav/" class="portfolio-mask" target="_blank">
-                    <h3>网易云音乐</h3>
-                    <ul>
-                        <li>关键词：移动端、jQuery</li>
-                        <li>描述：移动端歌曲播放、搜索、功能、PC 端歌曲上传、修改等功能。使用 jQuery、MVC、以及 LeanCloud、七牛等作为数据库实现</li>
-                    </ul>
-                </a>
+                    <div>
+                        <a class="button-default" href="https://yuyuye958.github.io/myCanvas/" target="_blank">点我预览</a>
+                        <a class="button-default" href="https://github.com/yuyuye958/myCanvas" target="_blank">源码链接</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -191,15 +295,15 @@
             <ul class="experience-left-ul">
                 <li>
                     2017 8月
-                    <span class="circle1"></span>
+                    <span class="circle"></span>
                 </li>
                 <li>
                     2017 6月
-                    <span class="circle2"></span>
+                    <span class="circle"></span>
                 </li>
                 <li>
                     2017 1月
-                    <span class="circle3"></span>
+                    <span class="circle"></span>
                 </li>
             </ul>
             <ul class="experience-right-ul">
@@ -207,7 +311,7 @@
                     <h3>法兰克福展览（上海）有限公司</h3>
                     <span>&lt;运维工程师&gt;</span>
                     <p>
-                        已于今年8月底离职，正在系统学习前端开发相关技能。
+                        已于18年9月初离职，正在系统学习前端开发。
                     </p>
                 </li>
                 <li>
@@ -221,7 +325,7 @@
                     <h3>尚励信息技术（上海）有限公司</h3>
                     <span>&lt;前端实习生&gt;</span>
                     <p>
-                        负责使用Bootstrap根据设计稿实现PC端和移动端的页面，解决兼容性问题。
+                        负责使用Bootstrap根据设计稿实现响应式页面，解决兼容性问题。
                     </p>
                 </li>
             </ul>
@@ -244,7 +348,7 @@
             <input type="submit" value="提交">
             <p class="notice">姓名和内容不能为空!</p>
         </form>
-        <ol id="messageList">
+        <ol id="messageList" class="section-shadow">
 
         </ol>
     </section>

@@ -6,7 +6,8 @@ option = {
     },
     tooltip: {},
     legend: {
-        data: ['目前的水平', '目标工作一年后达到的水平']
+        data: ['目前的水平', '目标工作一年后达到的水平'],
+        top: 10
     },
     radar: {
         // shape: 'circle',
@@ -20,14 +21,14 @@ option = {
         },
         indicator: [
             { name: 'HTML 5 & CSS 3', max: 100 },
-            { name: 'Vue.js', max: 100 },
             { name: 'jQuery', max: 100 },
+            { name: 'Vue.js', max: 100 },
             { name: 'JavaScript', max: 100 },
-            { name: '小程序', max: 100 },
+            { name: 'Node.js', max: 100 },
             { name: '移动端', max: 100 }
         ],
         nameGap: 10,
-        center: ['50%', '53%'],
+        center: ['50%', '50%'],
     },
     series: [{
         name: '现在 vs 目标',
@@ -35,11 +36,11 @@ option = {
         // areaStyle: {normal: {}},
         data: [
             {
-                value: [80, 70, 80, 75, 60, 75],
+                value: [85, 85, 80, 80, 60, 80],
                 name: '目前的水平'
             },
             {
-                value: [90, 90, 90, 90, 80, 85],
+                value: [95, 90, 90, 90, 80, 90],
                 name: '目标工作一年后达到的水平',
                 lineStyle: {
                     normal: {

@@ -13,7 +13,10 @@
                 popover.hide(150)
             })
         })
-        $(".media").on('click', function(e){
+        $(".media a").on('click', function(e){
+            e.stopPropagation()
+        })
+        $(".popover").on('click', function(e){
             e.stopPropagation()
         })
     }

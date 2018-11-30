@@ -41,7 +41,26 @@ hr {
   font-weight: 600;
   color: #3d4451;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+.button-default {
+  padding: 14px 18px;
+  border: 1px solid #7EC0EE;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 1px 20px -6px rgba(0, 0, 0, 0.5);
+}
+.button-default:hover {
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+}
+.section-shadow {
+  box-shadow: 0 1px 20px -6px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+.section-shadow:hover {
+  box-shadow: 0 5px 10px 5px rgba(110, 110, 110, 0.4);
 }
 /* 导航 */
 .topNavBar {
@@ -134,7 +153,7 @@ hr {
 .sticky {
   opacity: 0.9;
   background-color: white;
-  padding: 10px 0;
+  padding: 8px 0;
   z-index: 1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   color: #3d4451;
@@ -152,7 +171,6 @@ hr {
 /* 名片 */
 .myCard {
   margin-top: -350px;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .myCard .myCard-inner {
   background-color: white;
@@ -174,7 +192,7 @@ hr {
   padding: 4px 16px;
   display: inline-block;
   line-height: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   position: relative;
 }
 .myCard .myCard-inner .intro .sayHello .triangle {
@@ -188,10 +206,13 @@ hr {
   left: 10px;
 }
 .myCard .myCard-inner .intro h1 {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .myCard .myCard-inner .intro hr {
-  margin: 20px 0;
+  margin: 18px 0;
+}
+.myCard .myCard-inner .intro .selfIntro {
+  line-height: 1.5;
 }
 .myCard .myCard-inner .intro .myCardText p {
   padding: 8px 0;
@@ -219,6 +240,7 @@ hr {
   border-radius: 50%;
   margin: 16px;
   position: relative;
+  transition: all .2s;
 }
 .media > a:hover {
   background: #b0e2ff;
@@ -246,52 +268,95 @@ hr {
   background: url(../img/weixin.png) no-repeat transparent;
   background-size: cover;
 }
-/* 下载pdf简历 */
-.downloadresume-wrapper {
-  float: right;
-}
-.downloadresume {
-  padding: 14px 16px;
-  border: 1px solid #7EC0EE;
-  border-radius: 3px;
-  font-weight: bold;
-  display: inline-block;
-  transition: box-shadow 0.2s;
-}
-.downloadresume:hover {
-  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
-}
 /* 技能 */
-.skills #radar {
+.skills .skills-content {
+  display: flex;
+  padding: 20px 30px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.skills .skills-content .skills-text {
+  max-width: 440px;
+  padding-right: 10px;
+  line-height: 1.4;
+}
+.skills .skills-content .skills-text h3 {
+  margin-bottom: 3px;
+}
+.skills .skills-content .skills-text p {
+  color: rgba(0, 0, 0, 0.66);
+}
+.skills .skills-content .skills-text hr {
+  margin: .5em 0;
+}
+.skills .skills-content #radar {
+  flex-grow: 1;
   min-height: 500px;
 }
 /* 作品集 */
-.portfolio .portfolio-img {
-  position: relative;
-  margin: 1%;
-  width: 48%;
-  display: inline-block;
+.portfolio .portfolio-content {
+  display: flex;
+  flex-direction: column;
 }
-.portfolio .portfolio-img img {
-  vertical-align: top;
+.portfolio .portfolio-content .portfolio-list {
+  display: flex;
+  height: 300px;
+  margin: 20px 0 20px;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.portfolio .portfolio-img .portfolio-mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.portfolio .portfolio-content .portfolio-list:hover img {
+  transform: scale(1.1);
+}
+.portfolio .portfolio-content .portfolio-list .portfolio-list-img {
+  width: 55%;
+  overflow: hidden;
+}
+.portfolio .portfolio-content .portfolio-list .portfolio-list-img img {
   height: 100%;
-  background: rgba(101, 101, 101, 0.6);
-  padding: 20px;
-  color: #ffffff;
-  opacity: 0;
-  transition: all .3s;
+  vertical-align: top;
+  transition: all .6s;
 }
-.portfolio .portfolio-img .portfolio-mask h3 {
-  margin-bottom: 20px;
+.portfolio .portfolio-content .portfolio-list .portfolio-list-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
-.portfolio .portfolio-img:hover .portfolio-mask {
-  opacity: 1;
+.portfolio .portfolio-content .portfolio-list .portfolio-list-content h3 {
+  margin-bottom: 1em;
+}
+.portfolio .portfolio-content .portfolio-list .portfolio-list-content ul {
+  flex: 1;
+}
+.portfolio .portfolio-content .portfolio-list .portfolio-list-content ul li {
+  line-height: 1.6;
+  margin-bottom: 0.5em;
+}
+.portfolio .portfolio-content .portfolio-list .portfolio-list-content ul li span {
+  color: rgba(0, 0, 0, 0.66);
+}
+.portfolio .portfolio-content .portfolio-list .portfolio-list-content a {
+  padding: 8px 12px;
+  border-color: rgba(0, 0, 0, 0.66);
+  font-weight: normal;
+  margin-top: 0.5em;
+}
+.portfolio .portfolio-content .portfolio-list:nth-child(odd) .portfolio-list-img {
+  order: 1;
+}
+.portfolio .portfolio-content .portfolio-list:nth-child(odd) .portfolio-list-content {
+  order: 0;
+  margin: 20px 30px;
+}
+.portfolio .portfolio-content .portfolio-list:nth-child(odd) .portfolio-list-content a {
+  margin-right: 1em;
+}
+.portfolio .portfolio-content .portfolio-list:nth-child(even) .portfolio-list-content {
+  text-align: right;
+  margin: 20px 30px;
+}
+.portfolio .portfolio-content .portfolio-list:nth-child(even) .portfolio-list-content a {
+  margin-left: 1em;
 }
 /* 个人经历 */
 .experience .experience-inner {
@@ -301,13 +366,14 @@ hr {
 .experience-left-ul {
   position: relative;
   width: 150px;
-  height: 100%;
-  padding-top: 10px;
 }
 .experience-left-ul li {
-  height: 110px;
-  line-height: 110px;
+  height: 33%;
+  display: flex;
+  align-items: center;
   color: #7EC0EE;
+  position: relative;
+  padding: 0 10px;
 }
 .experience-left-ul li span {
   border: 2px solid #7EC0EE;
@@ -319,20 +385,15 @@ hr {
   position: absolute;
   right: -12px;
 }
-.experience-left-ul li .circle1 {
-  top: 58px;
-}
-.experience-left-ul li .circle2 {
-  top: 168px;
-}
-.experience-left-ul li .circle3 {
-  bottom: 48px;
+.experience-left-ul li .circle {
+  top: 45%;
 }
 .experience-right-ul {
   border-left: 8px solid #d7d8d8;
 }
 .experience-right-ul li {
-  margin: 28px 0 35px 50px;
+  height: 33%;
+  padding: 15px 0 15px 50px;
 }
 .experience-right-ul li span {
   color: #7EC0EE;
@@ -371,7 +432,7 @@ hr {
   padding: 4px;
 }
 .message form input {
-  border-radius: 2px;
+  border-radius: 4px;
   border: 1px solid #7EC0EE;
 }
 .message form input[name=name] {
@@ -469,33 +530,51 @@ hr {
   .banner .mask {
     height: 700px;
   }
+  /* 技能 */
+  .skills .skills-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .skills .skills-content .skills-text {
+    order: 1;
+    padding-right: 0;
+    margin-top: -40px;
+  }
+  .skills .skills-content li {
+    padding-left: 0;
+  }
   /* 作品集 */
-  .portfolio .portfolio-img {
-    margin: 10px auto;
+  .portfolio .portfolio-content .portfolio-list {
+    flex-direction: column;
+    height: auto;
+  }
+  .portfolio .portfolio-content .portfolio-list .portfolio-list-img {
     width: 100%;
   }
-  .portfolio .portfolio-img .portfolio-mask {
-    padding: 10px;
-    opacity: 0.9;
+  .portfolio .portfolio-content .portfolio-list:nth-child(odd) .portfolio-list-img {
+    order: 0;
   }
-  .portfolio .portfolio-img .portfolio-mask h3 {
-    margin-bottom: 10px;
+  .portfolio .portfolio-content .portfolio-list:nth-child(odd) .portfolio-list-content {
+    margin: 20px;
+    order: 1;
+  }
+  .portfolio .portfolio-content .portfolio-list:nth-child(even) .portfolio-list-content {
+    margin: 20px;
+    text-align: left;
+  }
+  .portfolio .portfolio-content .portfolio-list:nth-child(even) .portfolio-list-content a {
+    margin-left: 0;
+    margin-right: 1em;
   }
   /* 个人经历 */
   .experience-left-ul {
-    width: 165px;
+    width: 180px;
   }
   .experience-left-ul li {
-    height: 150px;
-  }
-  .experience-left-ul li .circle2 {
-    top: 208px;
-  }
-  .experience-left-ul li .circle3 {
-    bottom: 85px;
+    padding-left: 0;
   }
   .experience-right-ul li {
-    margin: 35px 0 40px 18px;
+    padding-left: 15px;
   }
   /* 留言板 */
   .message form .formName,
