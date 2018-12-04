@@ -56,6 +56,7 @@ hr {
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
 }
 .section-shadow {
+  border-radius: 10px;
   box-shadow: 0 1px 20px -6px rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.3s ease;
 }
@@ -175,6 +176,8 @@ hr {
 .myCard .myCard-inner {
   background-color: white;
   padding: 40px 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .myCard .myCard-inner .photo {
   float: left;
@@ -231,6 +234,8 @@ hr {
 .media {
   background-color: #7EC0EE;
   text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .media > a {
   display: inline-block;
@@ -273,7 +278,7 @@ hr {
   display: flex;
   padding: 20px 30px;
   overflow: hidden;
-  border-radius: 10px;
+  background: white;
 }
 .skills .skills-content .skills-text {
   max-width: 440px;
@@ -302,11 +307,13 @@ hr {
   display: flex;
   height: 300px;
   margin: 20px 0 20px;
-  border-radius: 10px;
   overflow: hidden;
 }
 .portfolio .portfolio-content .portfolio-list:hover img {
   transform: scale(1.1);
+}
+.portfolio .portfolio-content .portfolio-list:first-child {
+  margin-top: 0;
 }
 .portfolio .portfolio-content .portfolio-list .portfolio-list-img {
   width: 55%;
@@ -321,6 +328,8 @@ hr {
   flex: 1;
   display: flex;
   flex-direction: column;
+  padding: 20px 30px;
+  background: white;
 }
 .portfolio .portfolio-content .portfolio-list .portfolio-list-content h3 {
   margin-bottom: 1em;
@@ -346,22 +355,25 @@ hr {
 }
 .portfolio .portfolio-content .portfolio-list:nth-child(odd) .portfolio-list-content {
   order: 0;
-  margin: 20px 30px;
 }
 .portfolio .portfolio-content .portfolio-list:nth-child(odd) .portfolio-list-content a {
   margin-right: 1em;
 }
 .portfolio .portfolio-content .portfolio-list:nth-child(even) .portfolio-list-content {
   text-align: right;
-  margin: 20px 30px;
 }
 .portfolio .portfolio-content .portfolio-list:nth-child(even) .portfolio-list-content a {
   margin-left: 1em;
 }
 /* 个人经历 */
+.experience {
+  max-width: 800px;
+}
 .experience .experience-inner {
   display: flex;
   justify-content: center;
+  padding: 20px;
+  background: white;
 }
 .experience-left-ul {
   position: relative;
@@ -407,7 +419,6 @@ hr {
   max-width: 800px;
   margin: 0 auto;
   border-top: 1px solid #ececec;
-  border-radius: 3px;
   background-color: #fff;
   box-shadow: 0 1px 6px 4px rgba(102, 102, 102, 0.1);
 }
@@ -432,7 +443,7 @@ hr {
   padding: 4px;
 }
 .message form input {
-  border-radius: 4px;
+  border-radius: 3px;
   border: 1px solid #7EC0EE;
 }
 .message form input[name=name] {
@@ -468,6 +479,13 @@ hr {
 /***************************/
 /* 移动端适配 */
 @media screen and (max-width: 768px) {
+  .section {
+    width: 95%;
+    margin: 60px auto;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
   /* 导航 */
   .topNavBar nav {
     transition: all .3s;
@@ -475,7 +493,7 @@ hr {
   .topNavBar nav ul {
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 57px;
     width: 100%;
     display: none;
   }
@@ -551,15 +569,16 @@ hr {
   .portfolio .portfolio-content .portfolio-list .portfolio-list-img {
     width: 100%;
   }
+  .portfolio .portfolio-content .portfolio-list .portfolio-list-content {
+    padding: 20px;
+  }
   .portfolio .portfolio-content .portfolio-list:nth-child(odd) .portfolio-list-img {
     order: 0;
   }
   .portfolio .portfolio-content .portfolio-list:nth-child(odd) .portfolio-list-content {
-    margin: 20px;
     order: 1;
   }
   .portfolio .portfolio-content .portfolio-list:nth-child(even) .portfolio-list-content {
-    margin: 20px;
     text-align: left;
   }
   .portfolio .portfolio-content .portfolio-list:nth-child(even) .portfolio-list-content a {
