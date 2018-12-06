@@ -181,12 +181,12 @@ hr {
 }
 .myCard .myCard-inner .photo {
   float: left;
-  max-width: 300px;
+  max-width: 215px;
   margin: 0 auto;
 }
 .myCard .myCard-inner .intro {
   float: right;
-  max-width: 470px;
+  max-width: 560px;
   margin: 0 auto;
 }
 .myCard .myCard-inner .intro .sayHello {
