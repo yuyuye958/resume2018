@@ -396,42 +396,39 @@ hr {
 		background: white;
 	}
 }
-.experience-left-ul {
-	position: relative;
+.experience-left {
 	width: 150px;
-	li {
-		height: 33%;
-		display: flex;
-		align-items: center;
-		color: @blue;
-		position: relative;
-		padding: 0 10px;
-		span {
-			border: 2px solid @blue;
-			height: 16px;
-			width: 16px;
-			border-radius: 50%;
-			background: #fff;
-			display: block;
-			position: absolute;
-			right: -12px;
-		}
-		.circle {
-			top: 45%;
-		}
-	}
 }
-.experience-right-ul {
+.experience-right {
 	border-left: 8px solid #d7d8d8;
 	li {
-		height: 33%;
+		height: 50%;
 		padding: 15px 0 15px 50px;
+		position: relative;
 		span {
 			color: @blue;
 		}
 		h3,
 		p {
 			margin: 5px 0;
+		}
+		.experience-time{
+			display: flex;
+			align-items: center;
+			position: absolute;
+			left: -150px;
+			top: 23px;
+			span{
+				display: inline-block;
+			}
+			.circle {
+				margin-left: 70px;
+				border: 2px solid @blue;
+				height: 16px;
+				width: 16px;
+				border-radius: 50%;
+				background: #fff;
+			}
 		}
 	}
 }
@@ -630,15 +627,18 @@ hr {
 	}
 
 	/* 个人经历 */
-	.experience-left-ul {
-		width: 180px;
-		li {
-			padding-left: 0;
-		}
+	.experience-left {
+		width: 130px;
 	}
-	.experience-right-ul {
+	.experience-right {
 		li {
 			padding-left: 15px;
+			.experience-time{
+				left: -95px;
+				.circle{
+					margin-left: 15px;
+				}
+			}
 		}
 	}
 
