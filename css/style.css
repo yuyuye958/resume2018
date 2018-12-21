@@ -73,11 +73,11 @@ hr {
 }
 .topNavBar .topNavBar-inner {
   padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .topNavBar .topNavBar-inner nav {
-    padding-top: 5px;
-  }
   .topNavBar .topNavBar-inner nav ul > li {
     float: left;
     margin: 0 17px 0 17px;
@@ -141,8 +141,6 @@ hr {
 }
 .topNavBar .topNavBar-inner .logo {
   font: 24px 'Arial Black';
-  padding-top: 3px;
-  padding-bottom: 4px;
 }
 .topNavBar .topNavBar-inner .logo .rs {
   margin-right: 4px;
@@ -150,6 +148,9 @@ hr {
 }
 .topNavBar .topNavBar-inner .logo .card {
   color: #9a9da2;
+}
+.topNavBar .topNavBar-inner .navMobile {
+  display: none;
 }
 .sticky {
   opacity: 0.9;
@@ -484,36 +485,41 @@ hr {
     margin-bottom: 30px;
   }
   /* 导航 */
-  .topNavBar nav {
+  .topNavBar .topNavBar-inner nav {
     transition: all .3s;
   }
-  .topNavBar nav ul {
+  .topNavBar .topNavBar-inner nav ul {
     position: absolute;
     left: 0;
-    top: 57px;
+    top: 70px;
     width: 100%;
     display: none;
   }
-  .topNavBar nav ul li {
+  .topNavBar .topNavBar-inner nav ul li {
     line-height: 40px;
     height: 40px;
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
     border-bottom: 1px solid #9fb6cd;
   }
-  .topNavBar nav ul li a {
+  .topNavBar .topNavBar-inner nav ul li a {
     width: 100%;
     display: inline-block;
     text-align: center;
   }
-  .topNavBar .navMobile {
+  .topNavBar .topNavBar-inner .navMobile {
+    display: inline-block;
     width: 36px;
     height: 36px;
     float: right;
     background: url(/img/menu.png) no-repeat;
     background-size: cover;
   }
+  .topNavBar.sticky nav ul {
+    top: 46px;
+  }
   .sticky {
+    padding: 5px 0;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     box-shadow: none;
