@@ -511,8 +511,7 @@ hr {
     display: inline-block;
     width: 36px;
     height: 36px;
-    float: right;
-    background: url(/img/menu.png) no-repeat;
+    background: url(../img/menu.png) no-repeat;
     background-size: cover;
   }
   .topNavBar.sticky nav ul {
