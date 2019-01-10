@@ -356,12 +356,14 @@ hr {
 }
 .portfolio .portfolio-content .portfolio-list:nth-child(odd) .portfolio-list-content {
   order: 0;
+  border-right: 1px solid #dedede;
 }
 .portfolio .portfolio-content .portfolio-list:nth-child(odd) .portfolio-list-content a {
   margin-right: 1em;
 }
 .portfolio .portfolio-content .portfolio-list:nth-child(even) .portfolio-list-content {
   text-align: right;
+  border-left: 1px solid #dedede;
 }
 .portfolio .portfolio-content .portfolio-list:nth-child(even) .portfolio-list-content a {
   margin-left: 1em;
