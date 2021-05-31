@@ -3,8 +3,8 @@ window.Model = function (options) {
     return {
         // 初始化
         init: function () {
-            var APP_ID = 'L52drH4CI0UGr3r1GPWjm4bb-gzGzoHsz';
-            var APP_KEY = 's4rmnskDPuOmmzTMws3t3pV6';
+            var APP_ID = 'wNm15qkDtrkXuzP4n1MN6fol-gzGzoHsz';
+            var APP_KEY = 'R7GP0QIsN7UFM3HRe9kPEtRc';
             AV.init({
                 appId: APP_ID,
                 appKey: APP_KEY

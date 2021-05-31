@@ -26,7 +26,7 @@
                     })
                 },
                 function (error) {
-                    alert('获取数据失败')
+                    console.log('获取数据失败')
                 }
             )
         },

@@ -20,12 +20,12 @@ option = {
             }
         },
         indicator: [
-            { name: 'HTML 5 & CSS 3', max: 100 },
-            { name: 'jQuery', max: 100 },
-            { name: 'Vue.js', max: 100 },
             { name: 'JavaScript', max: 100 },
-            { name: 'Node.js', max: 100 },
-            { name: '移动端', max: 100 }
+            { name: 'Vue', max: 100 },
+            { name: 'AngularJS 1.x', max: 100 },
+            { name: 'React', max: 100 },
+            { name: 'JQuery', max: 100 },
+            { name: 'Node.js', max: 100 }
         ],
         nameGap: 10,
         center: ['50%', '50%'],
@@ -36,12 +36,12 @@ option = {
         // areaStyle: {normal: {}},
         data: [
             {
-                value: [85, 85, 80, 80, 60, 80],
+                value: [90, 90, 80, 70, 90, 70],
                 name: '目前的水平'
             },
             {
-                value: [95, 90, 90, 90, 80, 90],
-                name: '目标工作一年后达到的水平',
+                value: [98, 95, 85, 90, 95, 90],
+                name: '期望将来的进步',
                 lineStyle: {
                     normal: {
                         type: 'dashed'
