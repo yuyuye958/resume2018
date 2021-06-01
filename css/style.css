@@ -387,14 +387,14 @@ hr {
   display: flex;
   align-items: center;
   position: absolute;
-  left: -150px;
+  left: -110px;
   top: 23px;
 }
 .experience-right li .experience-time span {
   display: inline-block;
 }
 .experience-right li .experience-time .circle {
-  margin-left: 70px;
+  margin-left: 30px;
   border: 2px solid #7EC0EE;
   height: 16px;
   width: 16px;
